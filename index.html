@@ -5,31 +5,40 @@
         <link href="digital-bio-2023.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <nav></nav>
+        <nav>
+            <div class="box" id="size-choice">
+                <span style="" id="small-a">A</span>
+                <label class="switch">
+                    <input type="checkbox" onclick="increaseSize()">
+                    <span class="slider round"></span>
+                </label>
+                <span style="" id="large-a">A</span>
+            </div>
+        </nav>
         <div id="container">
             <div class="info">
-                <a href="https://digital-bio-2023.github.io"><h1>Life Narrative and the Digital 2023:<br /> An Interdisciplinary Conference and Workshop</h1></a>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                <a href="https://digital-bio-2023.github.io"><h1 lang="en">Life Narrative and the Digital 2023:<br />Interdisciplinary Conference and Workshop</h1></a>
+                <p lang="en">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </p>
-                <p>
+                <p lang="en">
                     Lorem ipsum dolor sit amet, <a  href="https://www.oeaw.ac.at/acdh/acdh-ch-home">consetetur</a> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 </p>
                 <img src="network.svg" alt="SVG image of social network diagram, with indigo blue edges and black nodes, showing multiple layers of sociability. https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28large%29.svg CC BY 3.0 DarwinPeacock, Maklaan." id="network" width="250px">
             </div>
             <div id="cfp">
-                <h2>Call for Papers</h2>
-                <p>The study of life narratives in different media and genres has developed into a vibrant area of cross-disciplinary Humanities research. While a significant strand of scholarship has focused on the forms and strategies of self-presentation in online environments and digital media (see xxx), less attention has been paid to the possibilities, uses and challenges of digital methods and technologies for auto/biographical research and practice. This two-day conference-plus-workshop brings together scholars from a wide range of disciplines and different career stages to explore the following questions:</p>
+                <h2 lang="en">Call for Papers</h2>
+                <p lang="en">The study of life narratives in different media and genres has developed into a vibrant area of cross-disciplinary Humanities research. While a significant strand of scholarship has focused on the forms and strategies of self-presentation in online environments and digital media (see xxx), less attention has been paid to the possibilities, uses and challenges of digital methods and technologies for auto/biographical research and practice. This two-day conference-plus-workshop brings together scholars from a wide range of disciplines and different career stages to explore the following questions:</p>
                 <ul>
-                    <li>In what ways can digital methods and technologies aid the study and analysis of biographical data?</li>
-                    <li>How can the digital help us devise <a  href="https://www.oeaw.ac.at/acdh/acdh-ch-home">innovative</a> pathways to the representation of historical individuals’ lives?</li>
-                    <li>How do we deal with uncertainty in the digital representation of biographical data?</li>
-                    <li>To what extent do digital formats of life narration tie in with new trends in auto/biographical scholarship and practice? (e.g. metabiography, relational biography, persona studies, group biography, object biography, etc.)</li>
+                    <li lang="en">In what ways can digital methods and technologies aid the study and analysis of biographical data?</li>
+                    <li lang="en">How can the digital help us devise <a  href="https://www.oeaw.ac.at/acdh/acdh-ch-home">innovative</a> pathways to the representation of historical individuals’ lives?</li>
+                    <li lang="en">How do we deal with uncertainty in the digital representation of biographical data?</li>
+                    <li lang="en">To what extent do digital formats of life narration tie in with new trends in auto/biographical scholarship and practice? (e.g. metabiography, relational biography, persona studies, group biography, object biography, etc.)</li>
                 </ul>
-                <p>The workshop will be dedicated to short presentations of work-in-progress, with a strong focus on tools, technologies, software, and methods, and with an emphasis on feedback and exchange. </p>
+                <p lang="en">The workshop will be dedicated to short presentations of work-in-progress, with a strong focus on tools, technologies, software, and methods, and with an emphasis on feedback and exchange. </p>
             </div>
             <div class="info">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p lang="en">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <div class="box">
                     <img style="vertical-align:middle" src="mastodon.png" alt="PNG image of Mastodon logo." width="37.5px">
                     <img style="vertical-align:middle" src="twitter.png" alt="PNG image of Twitter logo." width="68px">
@@ -42,7 +51,7 @@
                 </div>
             </div>
             <div class="info">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p lang="en">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <div class="box" id="funders">
                     <a  href="https://www.fwf.ac.at/en"><img style="vertical-align:middle" src="fwf.gif" alt="GIF image of FWF logo with text &quot;FWF Der Wissenschaftsfonds.&quot;." width="180px"></a>
                     <a  href="https://www.oeaw.ac.at/en"><img style="vertical-align:middle" src="oeaw.png" alt="PNG image of ÖAW logo with text &quot;Austrian Academy of Sciences&quot;." width="180px"></a>
@@ -50,5 +59,6 @@
                 </div>
             </div>
         </div>
+        <script src="digital-bio-2023.js"></script>
     </body>
 </html>
