@@ -7,25 +7,6 @@ body {
     letter-spacing: 0.035em;
 }
 
-.large-font-size {
-    font-size: 22px;
-}
-
-.large-image {
-    width: 400px;
-}
-
-#small-a {
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-#large-a {
-    font-size: 20px;
-    margin-left: 5px;
-}
-
-
 #container {
     margin: 30px 30px 0px 30px;
     padding: 10px;
@@ -79,8 +60,8 @@ p > a:visited, li > a:visited {
     margin-right: 20px;
 }
 
-#cc > a {
-    margin-right: 10px;
+#media > a {
+    margin-right: 12.5px;
 }
  /*
 p, ul, span {
@@ -91,7 +72,11 @@ p, ul, span {
 /* align text with logo */
 .box {
     display: flex;
-    align-items:center;    
+    align-items: center;    
+}
+
+#home-button {
+    text-align: center;
 }
 
 /*
@@ -103,13 +88,33 @@ p, ul, span {
 }
 */
 
+
+/*
+
+font size toggle
+
 #size-choice {
     margin-left: 500px;
 }
 
-/*https://www.w3schools.com/howto/howto_css_switch.asp*/
+.large-font-size {
+    font-size: 22px;
+}
 
- /* The switch - the box around the slider */
+.large-image {
+    width: 400px;
+}
+
+#small-a {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#large-a {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
  .switch {
     position: relative;
     display: inline-block;
@@ -117,14 +122,14 @@ p, ul, span {
     height: 20px;
   }
   
-  /* Hide default HTML checkbox */
+
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* The slider */
+ 
   .slider {
     position: absolute;
     cursor: pointer;
@@ -163,11 +168,69 @@ p, ul, span {
     transform: translateX(15px);
   }
   
-  /* Rounded sliders */
+
   .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  } 
+  } */
+
+  #cookie-overlay {
+    background-color: rgba(51, 51, 51, 0.9);
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 15px 10px;
+    text-align: center;
+    display: none;
+    height: 100%;
+}
+
+#cookie-overlay .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.cookie-message {
+    display: inline-block;
+}
+
+.cookie-message a:hover {
+    color: #88DBDF;
+}
+
+.cookie-accept-btn, .cookie-accept-necessary-btn {
+    display: inline-block;
+    background-color: #ffd534;
+    color: #333;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+}
+
+.cookie-accept-btn, .cookie-accept-necessary-btn {
+    display: inline-block;
+    background-color: #ffd534;
+    color: #333;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 10px 10px 20px;
+    transition: background-color ease .2s;
+}
+
+.cookie-accept-btn:hover,
+.cookie-accept-necessary-btn:hover{
+    background-color: #d2b33d;
+}

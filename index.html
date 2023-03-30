@@ -6,14 +6,14 @@
     </head>
     <body>
         <nav>
-            <div class="box" id="size-choice">
+            <!-- <div class="box" id="size-choice"> font size toggle
                 <span style="" id="small-a">A</span>
                 <label class="switch">
                     <input type="checkbox" onclick="increaseSize()">
                     <span class="slider round"></span>
                 </label>
                 <span style="" id="large-a">A</span>
-            </div>
+            </div> -->
         </nav>
         <div id="container">
             <div class="info">
@@ -38,17 +38,15 @@
                 <p lang="en">The workshop will be dedicated to short presentations of work-in-progress, with a strong focus on tools, technologies, software, and methods, and with an emphasis on feedback and exchange. </p>
             </div>
             <div class="info">
-                <p lang="en">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                <div class="box">
+                <p lang="en">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                <div class="box" id="media">
+                    <a  href="https://creativecommons.org/licenses/by/4.0"><img style="vertical-align:middle" src="cc.svg" alt="SVG image of heart-shaped Creative Commons logo." width="45px"></a>
+                    <a  href="https://github.com/digital-bio-2023"><img style="vertical-align:middle" src="github.png" alt="PNG image of Github logo." width="42.5px"></a>
                     <img style="vertical-align:middle" src="mastodon.png" alt="PNG image of Mastodon logo." width="37.5px">
-                    <img style="vertical-align:middle" src="twitter.png" alt="PNG image of Twitter logo." width="68px">
+                    <a  href="https://twitter.com"><img style="vertical-align:middle" src="twitter.png" alt="PNG image of Twitter logo." width="68px"></a>
                     <span style="">#DigitalBio2023</span>
                 </div>
-                <div class="box" id="cc">
-                    <a  href="https://github.com/digital-bio-2023"><img style="vertical-align:middle" src="github.png" alt="PNG image of Github logo." width="37.5px"></a>
-                    <a  href="https://creativecommons.org/licenses/by/4.0/"><img style="vertical-align:middle" src="cc.svg" alt="SVG image of heart-shaped Creative Commons logo." width="40px"></a>
-                    <span style=""></span>
-                </div>
+                <p><a href="imprint.html">Imprint</a></p>
             </div>
             <div class="info">
                 <p lang="en">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -59,6 +57,20 @@
                 </div>
             </div>
         </div>
+        <div id="cookie-overlay">
+            <div class="container">
+                <div class="cookie-message">This website uses cookies to ensure you get the best experience on our website. <a href="/browser/imprint">More info</a><br/></div>  
+                <div class="cookie-buttons">
+                    <div class="cookie-accept-btn">Accept All Cookies (functional and tracking)</div>
+                    <div class="cookie-accept-necessary-btn">Accept Necessary Cookies Only</div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
+        <script src="cookie_consent.js"></script>
         <script src="digital-bio-2023.js"></script>
     </body>
 </html>
