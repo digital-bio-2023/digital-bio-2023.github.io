@@ -7,11 +7,12 @@ body {
     letter-spacing: 0.035em;
 }
 
+/*style outer grid container*/
 #container {
     margin: 30px 30px 0px 30px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 600px); /* automatically create new columns as window is resized */
+    grid-template-columns: repeat(auto-fill, 600px); /*automatically create new columns as window is resized*/
     grid-gap: 10px;
     justify-content: space-evenly;
     align-content: space-evenly;
@@ -31,7 +32,8 @@ h1, h2 {
     color: #2856a3;
 }
 
-#network { /* center image */
+/*center image*/
+#network {
     display: block;
     margin: auto;
 }
@@ -63,13 +65,8 @@ p > a:visited, li > a:visited {
 #media > a {
     margin-right: 12.5px;
 }
- /*
-p, ul, span {
-    color: #5c5a5a;
-    font-size: 18px;
-}*/
 
-/* align text with logo */
+/*align text with logo*/
 .box {
     display: flex;
     align-items: center;    
@@ -79,19 +76,7 @@ p, ul, span {
     text-align: center;
 }
 
-/*
-#container > div {
-    background-color: RGB(97,90,96);
-    color: white;
-    font-size: 48px;
-    text-align: center;
-}
-*/
-
-
-/*
-
-font size toggle
+/*font size toggle
 
 #size-choice {
     margin-left: 500px;
@@ -129,7 +114,6 @@ font size toggle
     height: 0;
   }
   
- 
   .slider {
     position: absolute;
     cursor: pointer;
@@ -167,7 +151,6 @@ font size toggle
     -ms-transform: translateX(15px);
     transform: translateX(15px);
   }
-  
 
   .slider.round {
     border-radius: 34px;
@@ -177,6 +160,7 @@ font size toggle
     border-radius: 50%;
   } */
 
+  /*cookie consent*/
   #cookie-overlay {
     background-color: rgba(51, 51, 51, 0.9);
     position: fixed;
@@ -188,6 +172,7 @@ font size toggle
     text-align: center;
     display: none;
     height: 100%;
+    margin-left: -10px;
 }
 
 #cookie-overlay .container {
