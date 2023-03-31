@@ -31,12 +31,19 @@ h2 {
 h1, h2 {
     color: #2856a3;
 }
-
-/*center feature image*/
+/*
+center feature image
 #network {
     display: block;
     margin: auto;
     margin-top: 30px;
+}*/
+
+#network {
+    opacity: 0.5;
+    position: absolute;
+    top: 250px;
+    left: 450px;
 }
 
 #emphasis {
