@@ -38,7 +38,7 @@ center feature image
     margin: auto;
     margin-top: 30px;
 }*/
-
+/*
 #network {
     opacity: 0.5;
     position: absolute;
@@ -47,6 +47,11 @@ center feature image
     z-index: -1000;
     max-width: 100%;
     height: auto;
+}
+*/
+
+#network {
+    padding: 50px;
 }
 
 a {
@@ -243,7 +248,7 @@ p > a:visited, li > a:visited {
 /*responsive navbar*/
 
 .topnav {
-    background-color: rgba(40,86,163,0.2);
+    background-color: #fffff2;
     overflow: hidden;
     padding-left: 40px;
 }
