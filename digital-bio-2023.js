@@ -44,7 +44,12 @@ var y = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000); /* calculating integer of seconds, by dividing remainder of minutes division by ms/secS */
 
   /* update element with id 'countdown' */
-  document.getElementById("countdown").innerHTML = days + ' <span class="countdown">days</span> ' + hours + ' <span class="countdown">hours</span> ' + minutes + ' <span class="countdown">minutes</span> ' + seconds + ' <span class="countdown">seconds</span> ';
+  document.getElementById("countdown").innerHTML = '<div id="countdown-container"><div class="countdown-segments"><div class="digit">' + padNumber(days) + '</div></br>Days</div><div class="countdown-segments"><div class="digit">' + padNumber(hours) + '</div></br>Hours</div><div class="countdown-segments"><div class="digit">' + padNumber(minutes) + '</div></br>Minutes</div><div class="countdown-segments"><div class="digit">' + padNumber(seconds) + '</div></br>Seconds</div></div>';
+
+  /* create function that converts number into string and pads it with leading zeros using the padStart function */
+  function padNumber(number) {
+    return String(number).padStart(2, '0');
+  }
 
   /* update element with id 'countdown' when countdown is finished */
   if (distance < 0) {

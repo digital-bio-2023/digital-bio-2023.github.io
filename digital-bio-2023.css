@@ -31,6 +31,7 @@ h2 {
 h1, h2 {
     color: #2856a3;
 }
+
 /*
 center feature image
 #network {
@@ -50,8 +51,21 @@ center feature image
 }
 */
 
+#myTopnav {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.inactive {
+    color: #CDCDCD;
+}
+
+#countdown_network {
+    text-align: center;
+}
+
 #network {
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
 }
 
 a {
@@ -80,6 +94,13 @@ p > a:visited, li > a:visited {
 
 #media > a {
     margin-right: 12.5px;
+}
+
+#email_icon {
+    font-size: 55px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    color: #2856a3;
 }
 
 #amp {
@@ -278,7 +299,7 @@ p > a:visited, li > a:visited {
 } 
 
 /*below 600px screen width, hide all links except first ("Home"); display fa fa bar icon*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -287,7 +308,7 @@ p > a:visited, li > a:visited {
 }
   
 /*when JS adds "responsive" class (when fa fa bar icon is clicked), display links vertically*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -299,4 +320,26 @@ p > a:visited, li > a:visited {
       display: block;
       text-align: left;
     }
-} 
+}
+
+/* countdown timer */
+
+/* flexbox layout */
+#countdown-container {
+    display: flex;
+  }
+  
+div.countdown-segments {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    border: 1px solid black; /* Optional: Adds a border to visually separate the elements */
+    margin-right: 10px; /* Optional: Adds some space between the elements */
+  }
+
+  div.digit {
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-size: 32px;
+    margin-bottom: -20px;
+    color: #2856a3
+  }
