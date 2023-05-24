@@ -97,7 +97,7 @@ p > a:visited, li > a:visited {
 }
 
 #email_icon {
-    font-size: 55px;
+    font-size: 50px;
     padding-bottom: 4px;
     margin-left: 10px;
     color: #2856a3;
@@ -333,13 +333,13 @@ div.countdown-segments {
     text-align: center;
     padding: 10px;
     flex: 1;
-    border: 1px solid black; /* Optional: Adds a border to visually separate the elements */
+    border: 1px solid #2856a3; /* Optional: Adds a border to visually separate the elements */
     margin-right: 10px; /* Optional: Adds some space between the elements */
   }
 
   div.digit {
     /*font-family: 'Courier New', Courier, monospace;*/
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: -20px;
-    color: #2856a3
+    color: #2856a3;
   }
