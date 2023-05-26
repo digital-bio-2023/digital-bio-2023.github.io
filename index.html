@@ -2,19 +2,20 @@
 <html>
     <head>
         <title>Life Narrative and the Digital 2023</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="digital-bio-2023.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link to icon library for fa fa bars icon-->
     </head>
     <body>
-        <nav>
-            <!--font size toggle-->
-            <!-- <div class="box" id="size-choice">
-                <span id="small-a">A</span>
-                <label class="switch">
-                    <input type="checkbox" onclick="increaseSize()">
-                    <span class="slider round"></span>
-                </label>
-                <span id="large-a">A</span>
-            </div> -->
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">DigitalBio2023</a>
+            <a href="cfp.html">Call for Papers</a>
+            <a href="" class="inactive">Program</a>
+            <a href="" class="inactive">Venue</a>
+            <a href="imprint.html">Imprint</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()"><!--evaluate expression and return undefined, not refresh or load new page on clicking link-->
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div id="container">
             <div id="conference">
@@ -22,10 +23,13 @@
                 <p lang="en"><span style="font-weight: bold;">26-27 September 2023</span></p>
                 <p lang="en">Austrian Centre for Digital Humanities and Cultural Heritage,<br />Austrian Academy of Sciences, Vienna</p>
                 <p lang="en">Digital methods, technologies, and formats have increasingly gained traction in the study of life narratives and biographical data, as well as in the presentation of historical lives. Auto/biographical research and practice are aided significantly by biographical research databases and platforms, biographical online dictionaries, digital editions of historical life documents as well as community- and institutionally driven online archives and web-based collaborative Wiki formats, which are characterised by accessibility, searchability, and user-orientedness. In addition, they often encourage interactive participation, and generally open up new quantitative and qualitative pathways / approaches to biographical research.</p>
-                <p lang="en">Notwithstanding their vast potential, digital tools and platforms and their uses often reveal a tension between research, on the one hand, and the communication of this research to a broader public and multiple audience groups, on the other. We are keen on stimulating an interdisciplinary dialogue between life writing theories and digital methodologies.</p>
-                <img src="network.svg" alt="SVG image of social network diagram, with indigo blue edges and black nodes, showing multiple layers of sociability. https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28large%29.svg CC BY 3.0 DarwinPeacock, Maklaan." id="network" width="400px">
+                <p lang="en">Notwithstanding their vast potential, digital tools and platforms and their uses often reveal a tension between research, on the one hand, and the communication of this research to a broader public and multiple audience groups, on the other. We are keen on stimulating an interdisciplinary dialogue between life writing theories and digital methodologies. <a href="cfp.html">Read the Call for Papers</a></p>
             </div>
-            <div id="cfp">
+            <div id="countdown_network">
+                <p id="countdown"></p>
+                <img src="network.svg" title="https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28large%29.svg CC BY 3.0 DarwinPeacock, Maklaan" alt="SVG image of social network diagram, with indigo blue edges and black nodes, showing multiple layers of sociability. https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28large%29.svg CC BY 3.0 DarwinPeacock, Maklaan." id="network" width="380px">
+            </div>
+            <!--<div id="cfp">
                 <h2 lang="en">Call for Papers</h2>
                 <p lang="en" style="font-weight: bold;">Submission Deadline: 26 May 2023</p>
                 <p lang="en">This two-day conference-plus-workshop brings together scholars and practitioners from different disciplines, communities, and career stages to explore the possibilities, uses, and challenges of digital methods and technologies for auto/biographical research and practice. We are particularly interested in the following questions:</p>
@@ -36,25 +40,27 @@
                     <li lang="en">How do we deal with uncertainty and the issue of data quality in the digital representation of biographical data?</li>
                 </ul>
                 <p lang="en">The event will feature both a workshop and a conference track. The workshop (26 September) will be dedicated to short presentations of work-in-progress, with a strong focus on tools, technologies, software, and methods, and with an emphasis on feedback and exchange. The conference (27 September) follows a conventional format, with a mix of research papers and panel discussions, and will be open to the public. <a href="cfp.html">Read more</a></p>
-            </div>
+            </div>-->
             <div>
                 <p lang="en"></p>
                 <div class="box" id="media">
                     <a href="https://creativecommons.org/licenses/by/4.0" target="_blank"><img style="vertical-align:middle" src="cc.svg" alt="SVG image of heart-shaped Creative Commons logo." width="45px"></a>
                     <a href="https://github.com/digital-bio-2023" target="_blank"><img style="vertical-align:middle" src="github.png" alt="PNG image of Github logo." width="42.5px"></a>
-                    <a href="https://joinmastodon.org" target="_blank"><img style="vertical-align:middle" src="mastodon.png" alt="PNG image of Mastodon logo." width="37.5px"></a>
+                    <a href="https://fedihum.org/@AMP_OeAW" target="_blank"><img style="vertical-align:middle" src="mastodon.png" alt="PNG image of Mastodon logo." width="37.5px"></a>
                     <a href="https://twitter.com/AMP_OeAW" target="_blank"><img style="vertical-align:middle" src="twitter.png" alt="PNG image of Twitter logo." width="48px"></a>
-                    <span lang="en">#DigitalBio2023</span>
+                    <p>#DigitalBio2023</p>
+                    <!--<a href="https://twitter.com/intent/tweet?button_hashtag=DigitalBio2023&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #DigitalBio2023</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                    <a href="mailto:amp@oeaw.ac.at" id="email_icon">&#x1F582;</a>
                 </div>
-                <p lang="en"><a href="imprint.html">Imprint</a> &#x00B7; <a href="mailto:amp@oeaw.ac.at">Contact</a></p>
+                <!--<p lang="en"><a href="imprint.html">Imprint</a> &#x00B7; <a href="mailto:amp@oeaw.ac.at">Contact</a></p>-->
             </div>
             <div>
                 <div class="box" id="amp">
                     <a href="https://amp.acdh.oeaw.ac.at" target="_blank"><img style="vertical-align:middle" src="Auden_Musulin_Papers_Logo_rechteckig.png" alt="PNG image of the Auden Musulin Papers project logo." width="80px"></a>
-                    <span lang="en">Auden Musulin Papers (FWF P 33754)</span>
+                    <span lang="en">Auden Musulin Papers (FWF Grant P 33754)</span>
                 </div>
                 <div class="box" id="funders">
-                    <a href="https://www.fwf.ac.at/en" target="_blank"><img style="vertical-align:middle" src="fwf.gif" alt="GIF image of FWF logo with text &quot;FWF Der Wissenschaftsfonds.&quot;." width="180px"></a>
+                    <a href="https://www.fwf.ac.at/en" target="_blank"><img style="vertical-align:middle" src="fwf_2.png" alt="PNG image of FWF logo with text &quot;Österreichischer Wissenschaftsfonds.&quot;." width="250px"></a>
                     <a href="https://www.oeaw.ac.at/en" target="_blank"><img style="vertical-align:middle" src="oeaw.png" alt="PNG image of ÖAW logo with text &quot;Austrian Academy of Sciences&quot;." width="180px"></a>
                     <a href="https://www.oeaw.ac.at/acdh/acdh-ch-home" target="_blank"><img style="vertical-align:middle" src="acdhch.png" alt="PNG image of ACDH-CH logo with text &quot;austrian centre for digital humanities & cultural heritage&quot;." width="180px"></a>
                 </div>

@@ -2,14 +2,23 @@
 <html>
     <head>
         <title>Life Narrative and the Digital 2023</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="digital-bio-2023.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- links to icon library for fa fa bars icon -->
     </head>
     <body>
-        <nav>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">DigitalBio2023</a>
+            <a href="cfp.html">Call for Papers</a>
+            <a href="" class="inactive">Program</a>
+            <a href="" class="inactive">Venue</a>
+            <a href="imprint.html" class="active">Imprint</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div id="container">
             <div>
-                <a href="https://digital-bio-2023.acdh.oeaw.ac.at/"><h1 lang="en">Life Narrative and the Digital 2023:<br />Interdisciplinary Conference and Workshop</h1></a>
                 <h2 lang="en">Imprint</h2>
                 <h3 lang="en">Legal disclosure according to §§ 24, 25 Austrian media law and § 5 E-Commerce law:</h3>
                 <h4 lang="en">Media owner, publisher, responsible for content and editorial office, service provider:</h4>
@@ -41,7 +50,7 @@
             <div>     
                 <h4 lang="en">Main aim:</h4>
                 <p lang="en">
-                    This website is dedicated to providing information on the results emerging from this project. 
+                    This website is dedicated to providing information on the Life Narrative and the Digital 2023 conference. 
                 </p>
 
                 <h4 lang="en">Disclaimer:</h4>
@@ -63,6 +72,20 @@
                 </p>
             </div>
         </div>
+        <div id="cookie-overlay"><!--part of cookie consent-->
+            <div class="container">
+                <div class="cookie-message">This website uses cookies to ensure you get the best experience on our website. <a href="imprint.html">More info</a><br/></div>  
+                <div class="cookie-buttons">
+                    <div class="cookie-accept-btn">Accept All Cookies (functional and tracking)</div>
+                    <div class="cookie-accept-necessary-btn">Accept Necessary Cookies Only</div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script><!--part of cookie consent-->
+        <script src="cookie_consent.js"></script><!--part of cookie consent-->
         <script src="digital-bio-2023.js"></script>
     </body>
 </html>
