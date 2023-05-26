@@ -48,17 +48,7 @@ center feature image
     z-index: -1000;
     max-width: 100%;
     height: auto;
-}
-*/
-
-#myTopnav {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.inactive {
-    color: #CDCDCD;
-}
+}*/
 
 #countdown_network {
     text-align: center;
@@ -76,7 +66,7 @@ p > a, li > a {
     color: #2856a3;
 }
 
-p > a:hover, li > a:hover {
+p > a:hover, li > a:hover, .topnav > a:hover {
     background-color: yellow;
 }
 
@@ -84,11 +74,7 @@ p > a:visited, li > a:visited {
     color: magenta;
 }
 
-#funders > img {
-    margin-right: 20px;
-}
-
-#funders > a {
+#funders > img, #funders > a {
     margin-right: 20px;
 }
 
@@ -151,7 +137,6 @@ p > a:visited, li > a:visited {
     width: 35px;
     height: 20px;
   }
-  
 
   .switch input {
     opacity: 0;
@@ -203,7 +188,7 @@ p > a:visited, li > a:visited {
   
   .slider.round:before {
     border-radius: 50%;
-  } */
+  }*/
 
 /*cookie consent*/
 
@@ -266,12 +251,13 @@ p > a:visited, li > a:visited {
     background-color: #d2b33d;
 }
 
-/*responsive navbar*/
+/*responsive navbar, following https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 
 .topnav {
-    background-color: #fffff2;
     overflow: hidden;
     padding-left: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .topnav a {
@@ -284,13 +270,12 @@ p > a:visited, li > a:visited {
     font-size: 17px;
   }
 
-.topnav a:hover {
-    background-color: yellow;
-    color: black;
-  }
-
 .topnav a.active {
     background-color: yellow;
+}
+
+.topnav a.inactive {
+    color: #CDCDCD;
 }
   
 /*hide fa fa bar icon*/
@@ -298,7 +283,7 @@ p > a:visited, li > a:visited {
     display: none;
 } 
 
-/*below 600px screen width, hide all links except first ("Home"); display fa fa bar icon*/
+/*below 850px screen width, hide all links except first and display fa fa bar icon*/
 @media screen and (max-width: 850px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -307,7 +292,7 @@ p > a:visited, li > a:visited {
     }
 }
   
-/*when JS adds "responsive" class (when fa fa bar icon is clicked), display links vertically*/
+/*when JS adds "responsive" class (on clicking fa fa bar icon), display links vertically*/
 @media screen and (max-width: 850px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -322,9 +307,9 @@ p > a:visited, li > a:visited {
     }
 }
 
-/* countdown timer */
+/*countdown timer, following https://www.w3schools.com/howto/howto_js_countdown.asp*/
 
-/* flexbox layout */
+/*flexbox layout*/
 #countdown-container {
     display: flex;
   }
@@ -332,9 +317,9 @@ p > a:visited, li > a:visited {
 div.countdown-segments {
     text-align: center;
     padding: 10px;
-    flex: 1;
-    border: 1px solid #2856a3; /* Optional: Adds a border to visually separate the elements */
-    margin-right: 10px; /* Optional: Adds some space between the elements */
+    flex: 1;/*gives same size to all elements*/
+    border: 1px solid #2856a3;
+    margin-right: 10px;
   }
 
   div.digit {
