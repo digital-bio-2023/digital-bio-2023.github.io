@@ -307,6 +307,34 @@ p > a:visited, li > a:visited {
     }
 }
 
+/*media query for mobile view*/
+
+/*below 600px screen width, hide all navbar links and reduce margins; change grid template to 80vw*/
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav {
+      overflow: hidden;
+      padding-left: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #container {
+        margin: 30px 30px 0px 30px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 80vw);
+        grid-gap: 10px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+}
+
 /*countdown timer, following https://www.w3schools.com/howto/howto_js_countdown.asp*/
 
 /*flexbox layout*/
