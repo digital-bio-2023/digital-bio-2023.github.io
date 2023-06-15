@@ -333,6 +333,19 @@ p > a:visited, li > a:visited {
         column-gap: 50px;
         row-gap: 50px;
     }
+    #media {
+        display: block;
+    }
+    #funders {
+        display: block;
+    }
+    #funders > a, #funders > img {
+        display: block;
+        padding-top: 5vw;
+    }
+    #network {
+        width: 60vw;
+    }
 }
 
 /*countdown timer, following https://www.w3schools.com/howto/howto_js_countdown.asp*/
