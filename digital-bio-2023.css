@@ -283,6 +283,12 @@ p > a:visited, li > a:visited {
       float: right;
       display: block;
     }
+    .topnav {
+        overflow: hidden;
+        padding-left: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
   
 /*when JS adds "responsive" class (on clicking fa fa bar icon), display links vertically*/
@@ -311,7 +317,7 @@ p > a:visited, li > a:visited {
     }
     .topnav {
       overflow: hidden;
-      padding-left: 40px;
+      padding-left: 20px;
       margin-left: 20px;
       margin-right: 20px;
     }
