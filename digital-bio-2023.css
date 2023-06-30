@@ -368,3 +368,23 @@ div.countdown-segments {
     margin-bottom: -20px;
     color: #2856a3;
   }
+
+/*tables*/
+
+th, td {
+    padding: 10px;
+    border: 1px solid #2856a3;
+    width: 200px;
+}
+
+.paper_id {
+    width: 30px;
+}
+
+.time_slot {
+    width: 120px;
+}
+
+table {
+    border-collapse: collapse;
+}
