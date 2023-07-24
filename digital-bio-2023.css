@@ -387,10 +387,14 @@ th, td {
 }
 
 .paper_title {
-    width: 400px;
+    width: 390px;
 }
 
 table {
     border-collapse: collapse;
     font-size: 16px;
+}
+
+.presenters {
+    color: #2856a3;
 }
