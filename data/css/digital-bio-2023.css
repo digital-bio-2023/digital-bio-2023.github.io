@@ -82,6 +82,10 @@ p > a:visited, li > a:visited {
     margin-right: 12.5px;
 }
 
+#version > a {
+    margin-right: 12.5px;
+}
+
 #amp {
     margin-bottom: 10px;
 }
