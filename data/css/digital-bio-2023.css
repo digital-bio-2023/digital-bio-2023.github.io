@@ -349,6 +349,9 @@ p > a:visited, li > a:visited {
     #network {
         width: 60vw;
     }
+    .venue-imgs {
+        width: 80vw;
+    }
 }
 
 /*countdown timer, following https://www.w3schools.com/howto/howto_js_countdown.asp*/
