@@ -53,13 +53,13 @@
         <div>
           <h3>How to Travel to/within Vienna</h3>
           <p>
-            <a href="https://www.wien.info/en/travel-info/arrival-departure/airport-to-center" target="_blank">Travelling to Vienna by plane (Tourist Info Vienna)</a>
+            <img style="vertical-align:middle" src="../../imgs/Plane_icon.svg.png" alt="PNG icon of plane." width="25px"> <a href="https://www.wien.info/en/travel-info/arrival-departure/airport-to-center" target="_blank">Travelling to Vienna by plane (Tourist Info Vienna)</a>
           </p>
           <p>
-            <a href="https://www.wien.info/en/travel-info/arrival-departure/by-train-342220" target="_blank">Travelling to Vienna by train (Tourist Info Vienna)</a>
+            <img style="vertical-align:middle" src="../../imgs/Train_Austria.svg.png" alt="PNG icon of train." width="25px"> <a href="https://www.wien.info/en/travel-info/arrival-departure/by-train-342220" target="_blank">Travelling to Vienna by train (Tourist Info Vienna)</a>
           </p>
           <p>
-            <a href="https://www.wien.gv.at/english/transportation-urbanplanning/public-transport/" target="_blank">Travelling in Vienna by public transport (City of Vienna)</a>
+            <img style="vertical-align:middle" src="../../imgs/BSicon_SUBWAY-CHN.svg" alt="SVG icon of subway train." width="25px"> <a href="https://www.wien.gv.at/english/transportation-urbanplanning/public-transport/" target="_blank">Travelling in Vienna by public transport (City of Vienna)</a>
           </p><br />
         </div>
         <div>
@@ -92,7 +92,7 @@
         </div>
         <div class="box" id="version">
             <a href="https://github.com/digital-bio-2023" target="_blank"><img style="vertical-align:middle" src="../../imgs/github.png" alt="PNG image of Github logo." width="42.5px"></a>
-            <p> v3.0.0</p>
+            <p> v3.0.1</p>
         </div>
         <!--<p lang="en"><a href="imprint.html">Imprint</a> &#x00B7; <a href="mailto:amp@oeaw.ac.at">Contact</a></p>-->
     </div>
@@ -123,6 +123,26 @@
     crossorigin="anonymous"></script><!--part of cookie consent-->
 <script src="../js/cookie_consent.js"></script><!--part of cookie consent-->
 <script src="../js/digital-bio-2023.js"></script>
-<script type="text/javascript">document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(''));</script><!-- links to js from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master -->
+<script type="text/javascript">
+  var _2ClickIframePrivacyConfig = {
+      enableCookies: true,
+      useSessionCookie: true,
+      cookieNamespace: '_2ClickIPEnable-',
+      showContentLabel: 'Activate Google Maps',
+      rememberChoiceLabel: 'Remember choice',
+      privacyPolicyLabel: false,
+      privacyPolicyUrl: false,
+      CustomTypes: Array(
+        {
+            type: 'map',
+            callback: 'map_callback',
+            description: 'We value your privacy, and external contents are disabled by default. Enable Google Maps if you agree to the <a href="https://policies.google.com/privacy" target="_blank">Google privacy statement</a>.<br/>'
+        }
+    )
+  };
+  
+  document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(_2ClickIframePrivacyConfig));
+  </script><!-- adapting code from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master, with the help of https://github.com/babslgam -->
+<!--<script type="text/javascript">document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(''));</script>--><!-- links to js from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master -->
 </body>
 </html>
