@@ -6,6 +6,7 @@
     <link href="../css/digital-bio-2023.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!--link to icon library for fa fa bars icon-->
+    <script src="../js/dist/2ClickIframePrivacy.min.js"></script><!-- from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master -->
   </head>
   <body>
     <nav class="topnav" id="myTopnav">
@@ -52,32 +53,33 @@
         <div>
           <h3>How to Travel to/within Vienna</h3>
           <p>
-            <a href="https://www.wien.info/en/travel-info/arrival-departure/airport-to-center" target="_blank">Travelling to Vienna by plane (from Tourist Info Vienna)</a>
+            <a href="https://www.wien.info/en/travel-info/arrival-departure/airport-to-center" target="_blank">Travelling to Vienna by plane (Tourist Info Vienna)</a>
           </p>
           <p>
-            <a href="https://www.wien.info/en/travel-info/arrival-departure/by-train-342220" target="_blank">Travelling to Vienna by train (from Tourist Info Vienna)</a>
+            <a href="https://www.wien.info/en/travel-info/arrival-departure/by-train-342220" target="_blank">Travelling to Vienna by train (Tourist Info Vienna)</a>
           </p>
           <p>
-            <a href="https://www.wien.gv.at/english/transportation-urbanplanning/public-transport/" target="_blank">Travelling within Vienna by public transport (from City of Vienna)</a>
+            <a href="https://www.wien.gv.at/english/transportation-urbanplanning/public-transport/" target="_blank">Travelling in Vienna by public transport (City of Vienna)</a>
           </p><br />
         </div>
         <div>
           <h3>How to Get to the Venues</h3>
           <p>Find Venue 1 <img style="vertical-align:middle" src="../../imgs/icon_workshop.png" alt="PNG icon designating Venue 1." title="Workshop icons created by noomtah - Flaticon" width="25px"> and Venue 2 <img style="vertical-align:middle" src="../../imgs/icon_conference.png" alt="PNG icon designating Venue 2." title="Conference icons created by Freepik - Flaticon" width="25px">, as well as nearby supermarkets, pharmacies, restaurants, cafés, ATMs, and sights with Google Maps:</p>
-          <p>
+            <p>
             <iframe
-              src="https://www.google.com/maps/d/u/1/embed?mid=1o1p_2DPFs62j6OXx00ShFAvqg1JCIQw&ehbc=2E312F"
+              data-src="https://www.google.com/maps/d/u/1/embed?mid=1o1p_2DPFs62j6OXx00ShFAvqg1JCIQw&ehbc=2E312F"
+              src=""
+              data-2click-type="map"
               width="600"
               height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            </iframe><!-- adapted according to https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master -->
           </p>
         </div>
       </div>
-
       <div>
         <p lang="en"></p>
         <div class="box" id="media">
@@ -90,7 +92,7 @@
         </div>
         <div class="box" id="version">
             <a href="https://github.com/digital-bio-2023" target="_blank"><img style="vertical-align:middle" src="../../imgs/github.png" alt="PNG image of Github logo." width="42.5px"></a>
-            <p> v2.3.6</p>
+            <p> v3.0.0</p>
         </div>
         <!--<p lang="en"><a href="imprint.html">Imprint</a> &#x00B7; <a href="mailto:amp@oeaw.ac.at">Contact</a></p>-->
     </div>
@@ -121,5 +123,6 @@
     crossorigin="anonymous"></script><!--part of cookie consent-->
 <script src="../js/cookie_consent.js"></script><!--part of cookie consent-->
 <script src="../js/digital-bio-2023.js"></script>
+<script type="text/javascript">document.addEventListener('DOMContentLoaded', _2ClickIframePrivacy.init(''));</script><!-- links to js from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master -->
 </body>
 </html>
