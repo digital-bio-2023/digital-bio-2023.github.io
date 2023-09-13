@@ -402,3 +402,16 @@ table {
 .presenters {
     color: #2856a3;
 }
+
+/*Iframe privacy 2-click solution from https://github.com/01-Scripts/2Click-Iframe-Privacy/tree/master*/
+
+div.privacy-msg p {
+    width: 600px;
+    border: 1px solid #2856a3;
+    padding: 5px;
+    text-align:center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
